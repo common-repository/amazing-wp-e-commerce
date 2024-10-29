@@ -1,0 +1,99 @@
+/*
+	(Products Page View)
+	Fixes visible scrollbar problem in Twentytwelve theme
+*/
+.default_product_display .imagecol {
+	overflow: visible;
+}
+
+/*	
+	(Grid View)
+	Set float to all grid items
+*/
+.product_grid_display .product_grid_item {
+	float: left;
+}
+
+	.product_grid_display .product_grid_item .item_image {
+		position: relative;
+	}
+
+		.product_grid_display .product_grid_item .item_image .mainThumbnail {
+			display: none;
+		}
+
+		.product_grid_display .product_grid_item .item_image .extraThumbnail {
+			display: none;
+		}
+
+		.product_grid_display .product_grid_item .item_image .product_image {
+			left: 0;
+			position: absolute;
+			top: 0;
+			z-index: 1;
+		}
+
+			.product_grid_display .product_grid_item .item_image .product_image.active_image {
+				display: block;
+				z-index: 2;
+			}
+
+/*
+	(Default View)
+*/
+.wpsc_default_product_list {
+
+}
+
+	.wpsc_default_product_list .default_product_display {}
+
+		.wpsc_default_product_list .default_product_display .imagecol {
+			position: relative;
+		}
+
+			.wpsc_default_product_list .default_product_display .imagecol .mainThumbnail {
+				display: none;
+			}
+
+			.wpsc_default_product_list .default_product_display .imagecol .extraThumbnail {
+				display: none;
+			}
+
+			.wpsc_default_product_list .default_product_display .imagecol .product_image {
+				left: 0;
+				position: absolute;
+				top: 0;
+				z-index: 1;
+			}
+
+				.wpsc_default_product_list .default_product_display .imagecol .product_image.active_image {
+					display: block;
+					z-index: 2;
+				}
+
+/* Loading animation */
+.amazing-loading {
+	background: url("images/loading.gif") no-repeat left top;
+	display: block;
+	left: 10px;
+	position: absolute;
+	top: 10px;
+	width: 43px;
+	height: 11px;
+	z-index: 3;
+}
+
+/*
+	To make the grid system as flexible as we can,
+	we will use percentages for columns (up to 10 per row).
+*/
+.amazing-ecommerce.grid-1 .product_grid_item { width: 100%; }
+.amazing-ecommerce.grid-2 .product_grid_item { width: 50%; }
+.amazing-ecommerce.grid-3 .product_grid_item { width: 33%; }
+.amazing-ecommerce.grid-4 .product_grid_item { width: 25%; }
+.amazing-ecommerce.grid-5 .product_grid_item { width: 20%; }
+.amazing-ecommerce.grid-6 .product_grid_item { width: 16.5%; }
+.amazing-ecommerce.grid-7 .product_grid_item { width: 14.2%; }
+.amazing-ecommerce.grid-8 .product_grid_item { width: 12.5%; }
+.amazing-ecommerce.grid-9 .product_grid_item { width: 11.1%; }
+.amazing-ecommerce.grid-10 .product_grid_item { width: 10%; }
